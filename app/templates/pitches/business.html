@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro %}
+{%block content%}
+<div class="container">
+    <div class="card" style="width: 20rem;">
+        <div class="card-body ">
+          <h4 class="card-title" style="font-weight:900;font-size:20px;font-family: 'Open Sans', sans-serif;">{{title}}</h4>
+          <div class="row">
+            
+            {{macro.displayPitches(business_pitch)}}
+          
+          </div>
+        </div>
+      </div>
+</div>
+{%endblock%}
